@@ -54,6 +54,6 @@ vpc_security_group_ids = [aws_security_group.demosg.id]
 subnet_id             = aws_subnet.public_subnet-1.id
 user_data="${file("userdata.sh")}"
 tags={
-Name="Webhooks 1"
+Name="Webhooks 2"
 }
 }
