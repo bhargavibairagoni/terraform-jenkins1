@@ -46,10 +46,10 @@ Name="WEB SG"
 
 resource "aws_instance" "public_subnet-1" {
 #vpc_id="${aws_vpc.demovpc.id}"
-ami="ami-01816d07b1128cd2d"
+ami="ami-06744fbd0847bf4f5"
 instance_type="t2.micro"
 count=1
-key_name="rocky"
+key_name="balaji"
 vpc_security_group_ids = [aws_security_group.demosg.id]
 user_data="${file("userdata.sh")}"
 tags={
