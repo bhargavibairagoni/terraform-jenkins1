@@ -45,7 +45,7 @@ Name="WEB SG"
 }
 
 resource "aws_instance" "public_subnet-1" {
-vpc_id="${aws_vpc.demovpc.id}"
+#vpc_id="${aws_vpc.demovpc.id}"
 ami="ami-01816d07b1128cd2d"
 instance_type="t2.micro"
 count=1
